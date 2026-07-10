@@ -1,0 +1,103 @@
+/* Reset and alignment styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Dark slate background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Calculator Wrapper */
+.calculator-container {
+    background-color: #1e293b;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+    width: 340px;
+}
+
+/* Screen Display Styling */
+#display {
+    width: 100%;
+    height: 70px;
+    background-color: #0f172a;
+    border: none;
+    border-radius: 8px;
+    color: #38bdf8; /* Light blue vibrant text */
+    font-size: 2rem;
+    text-align: right;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+/* CSS Grid for button alignments */
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* Base button UI */
+.btn {
+    background-color: #334155;
+    color: #f8fafc;
+    border: none;
+    padding: 18px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.btn:hover {
+    background-color: #475569;
+    transform: scale(1.03);
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+/* Special button classifications */
+.operator {
+    background-color: #f97316; /* Orange color */
+    color: #ffffff;
+}
+
+.operator:hover {
+    background-color: #ea580c;
+}
+
+.functional {
+    background-color: #64748b;
+    color: #ffffff;
+}
+
+.functional:hover {
+    background-color: #475569;
+}
+
+/* Spanning structural items with Grid layout formulas */
+.zero-btn {
+    grid-column: span 2;
+}
+
+.equal-btn {
+    background-color: #10b981; /* Emerald Green */
+    color: white;
+    grid-row: span 2;
+    height: 100%;
+}
+
+.equal-btn:hover {
+    background-color: #059669;
+}
